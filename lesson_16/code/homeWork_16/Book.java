@@ -9,9 +9,9 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String author) {
-        this.title = title;
-        this.author = author;
+    public Book(String title1, String author1) {
+        this.title = title1;
+        this.author = author1;
     }
 
     public Book(String title, String author, String genre, int year) {
