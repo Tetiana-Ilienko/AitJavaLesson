@@ -20,6 +20,8 @@
       <sourceFolder url="file://$MODULE_DIR$/lesson_13/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_14/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_15/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_16/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_17/code" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/lesson_03/code/Math" />
       <excludeFolder url="file://$MODULE_DIR$/src" />
     </content>
