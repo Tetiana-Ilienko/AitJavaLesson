@@ -15,7 +15,7 @@ public class MainLesson_18 {
 
         ra.add(7,17,21);
         ra.printArray();
-        Dog dog = new Dog("Rex", 2);
+
 
     }
 }
