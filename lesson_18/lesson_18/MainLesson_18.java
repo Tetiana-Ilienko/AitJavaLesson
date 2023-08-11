@@ -2,6 +2,7 @@ public class MainLesson_18 {
     public static void main(String[] args) {
           RubberArray ra = new RubberArray();  // новый массив
           ra.printArray();
+        System.out.println("Min: "+ra.min());
 
           ra.add(10); // создаем еще одну ячейку массива и присваиваем значение
           ra.add(25);
@@ -10,11 +11,17 @@ public class MainLesson_18 {
           ra.printArray();  // обращаемся к нашему методу и распечатываем массив
 
         int raSize = ra.size();
-        System.out.println(raSize + "");
-        System.out.println(ra.sumOfValues());
+        System.out.println("Сейчас в массиве  " +raSize + " элементов");
+        System.out.println("Сумма значений элементов массива " + ra.sumOfValues());
 
-        ra.add(7,17,21);
+        ra.add(7,17,21); // добавляем несколько значений в массив
         ra.printArray();
+        System.out.println("Min в массиве: " + ra.min());
+        System.out.println("Max в массиве: " + ra.max());
+
+        ra.deleteByIndex(3);
+        ra.printArray();
+
 
 
     }

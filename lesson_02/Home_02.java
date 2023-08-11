@@ -1,4 +1,6 @@
-public class Home {
+package lesson_02;
+
+public class Home_02 {
     public static void main(String[] args) {
         //        Lets go!
         System.out.println("Hallo World!");

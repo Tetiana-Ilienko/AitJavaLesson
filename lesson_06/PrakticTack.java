@@ -1,3 +1,5 @@
+package lesson_06;
+
 import java.util.Random;
 
 public class PrakticTack {
