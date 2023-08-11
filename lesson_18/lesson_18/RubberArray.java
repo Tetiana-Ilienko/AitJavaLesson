@@ -89,8 +89,9 @@ public class RubberArray {
     }
 
     //удалить элемент по индексу
+//    ----------------------------------------------------------------------------
     public void deleteByIndex(int index) {
-        if (array.length >=1 && index>=0 && index<array.length) { // проверка по не корректным индексам
+        if (array.length >= 1 && index >= 0 && index < array.length) { // проверка по не корректным индексам
             int[] result = new int[array.length - 1];
             for (int i = 0; i < result.length; i++) {
                 if (i < index) {  // до заданного индекса переписываем массив
@@ -102,5 +103,58 @@ public class RubberArray {
             array = result;
         }
     }
+
+    // Поиск элемента по значению
+//---------------------------------------------------------------------
+    public int searchByValue(int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (value == array[i]) return i;
+        }
+        return -1;
+    }
+
+    //    удалить элемент по значению
+//    -------------------------------------------------------------------
+    public boolean deleteByValue(int value) {
+        int indexByValue = searchByValue(value);
+        if (indexByValue < 0) return false;
+        deleteByIndex(indexByValue);
+        return true;
+    }
+
+    //    удаление Всех элементов, имеющих значение Х
+//    __________________________________________________________________
+    public int deleteAllByValue(int value) {
+        int count = 0;
+        while (deleteByValue(value)) {
+            count++;
+        }
+        return count;
+    }
+
+    //    возвращение значения по индексу
+//    ______________________________________________________________________
+    public int getValueByIndex(int index) {
+        if (index < 0 || index >= array.length) {
+            return Integer.MIN_VALUE;
+        }
+        return array[index];
+    }
+
+    //       заменить по индексу значение в массиве
+//    ______________________________________________________________________
+    public boolean changeValueByIndex(int index, int newValue) {
+        if (isIndexInCorrect(index)) {
+            return false;
+        }
+        array[index] = newValue;
+        return true;
+    }
+
+    private boolean isIndexInCorrect(int index) {
+        return (index >= 0 || index < array.length);
+    }
+
+
 }
 
