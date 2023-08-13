@@ -59,7 +59,7 @@ public class Dog {
                 ". Ich bin " + age + " Jahre Alt. Ich kann " + heightJump + " Zm hoch springen.\n");
     }
 
-    void jump(int xHeight) {
+    private void jump(int xHeight) {
         System.out.println("Ich kann " + xHeight + " hoch springen.");
     }
     void jump() {
