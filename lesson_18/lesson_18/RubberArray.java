@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+// lesson _18
 public class RubberArray {
     int[] array;
 

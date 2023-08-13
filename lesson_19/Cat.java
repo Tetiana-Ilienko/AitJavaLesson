@@ -1,5 +1,5 @@
 package lesson_19;
-
+// lesson_19
 public class Cat {
 
     private String name;    //  инкапсуляция, пользователь не может напрямую присваивать значения полям класса
