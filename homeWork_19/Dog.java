@@ -62,13 +62,13 @@ public class Dog {
     private void jump(int xHeight) {
         System.out.println("Ich kann " + xHeight + " hoch springen.");
     }
-    void jump() {
+   public void jump() {
         System.out.println("Ich kann " + heightJump + " hoch springen.");
         System.out.println("Wenn ich trainiere, kann ich " + maxHeightJump + " hoch springen.\n");
     }
 
 
-    void training() {
+    public void training() {
         System.out.println("Der Trainingsbeginn. ");
         if (heightJump + 10 <= maxHeightJump) {
             heightJump += 10;
@@ -84,7 +84,7 @@ public class Dog {
         }
     }
 
-    void getBarrier(int heightBarrier) {
+    public  void getBarrier(int heightBarrier) {
         System.out.println("\nHopp! Barriere ist " + heightBarrier);
         if (heightBarrier <= 0 || heightBarrier > maxHeightJump) {
             System.out.println("Es gibt ein Feller!!!");
