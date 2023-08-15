@@ -50,6 +50,7 @@ public class RubberArray {
         }
         System.out.println("]");
     }
+
     public void printFullArray() { // вывести в консоль массив
         System.out.print("[");
         for (int i = 0; i < array.length; i++) {
@@ -70,36 +71,33 @@ public class RubberArray {
         return array.length;
     }
 
-    //TODO
     public int sumOfValues() { // сумма значений массиве
         int summ = 0;
-        for (int value : array) {
-            summ += value;
+        for (int i = 0; i < cursor; i++) {
+            summ += array[i];
         }
         return summ;
     }
 
-    //TODO  переписать
     public int min() {
         // проверка, если длинна массива 0 возвращаем самое маленькое значение
         if (array.length <= 0) return Integer.MIN_VALUE; //  выводим минимальное число  int
         int min = array[0];
-        for (int value : array) {
-            if (value < min) {
-                min = value;
+        for (int i = 0; i < cursor; i++) {
+            if (array[i]<min) {
+                min = array[i];
             }
         }
         return min;
     }
 
-    // TODO переписать
     public int max() {
         // проверка, если длинна массива 0 возвращаем самое маленькое значение
         if (array.length <= 0) return Integer.MIN_VALUE; //  выводим минимальное число  int
         int max = array[0];
-        for (int value : array) {
-            if (value > max) {
-                max = value;
+        for (int i = 0; i < cursor; i++) {
+            if (array[i]>max) {
+                max = array[i];
             }
         }
         return max;

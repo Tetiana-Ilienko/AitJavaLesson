@@ -30,6 +30,9 @@ public class MainRA {
 
         rubberArray.changeValueByIndex(1, 100);
         rubberArray.printFullArray();
+        System.out.println(rubberArray.max());
+        System.out.println(rubberArray.min());
+        System.out.println(rubberArray.sumOfValues());
 
 
     }
