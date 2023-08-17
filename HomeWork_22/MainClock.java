@@ -5,9 +5,9 @@ public class MainClock {
 
         Clock clock = new Clock("Casio", "настенные", 1980);
         System.out.println(clock.toString());;
-        clock.setAnalogDisplay(false);
+       // clock.setAnalogDisplay(false);
 
-        System.out.println( "Часы аналоговые " + clock.isAnalogDisplay());
+//        System.out.println( "Часы аналоговые " + clock.isAnalogDisplay());
         clock.whatTimeIs(12,35,40);
 
         AlarmClock alarmClock = new AlarmClock("omega", "настольные", 2000);
@@ -17,9 +17,9 @@ public class MainClock {
         alarmClock.ringAlarm(7,30,00);
 
         SmartWatch smartWatch = new SmartWatch("apple", "наручные",2022);
-        smartWatch.setAnalogDisplay(false);
+//        smartWatch.setAnalogDisplay(false);
         smartWatch.setAlarm(true);
-        smartWatch.setAnalogDisplay(false);
+//        smartWatch.setAnalogDisplay(false);
         System.out.println(smartWatch.toString());
         smartWatch.ringAlarm(12,48,25);
         smartWatch.setHeartRateMonitor(true);
