@@ -63,10 +63,11 @@ public class BusDriver {
             }
         }
             String[] temp = new String[categories.length - 1]; // создаем новый массив на 1 короче
-            for (int i = 0, j = 0; i < categories.length; i++) {
+            for (int i = 0, j = 0; i < categories.length; i++) {// перебираем массив
+//                если не равно искомому индексу - переписываем значение, или пропускаем
                 if (i != index) {
                     temp[j] = categories[i];
-                    j++;
+                    j++; // индекс нового массива
                 }
             }
             categories = temp;

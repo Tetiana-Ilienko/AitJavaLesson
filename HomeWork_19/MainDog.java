@@ -1,4 +1,4 @@
-package homeWork_19;
+package HomeWork_19;
 
 public class MainDog {
     public static void main(String[] args) {
