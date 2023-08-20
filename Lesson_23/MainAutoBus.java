@@ -42,11 +42,13 @@ public class MainAutoBus {
 
         System.out.println(driver2.toString());
 
-        driver2.removeCategories("B");
+        driver2.removeCategories("N");
 //
 
         System.out.println(driver2.toString());
         driver2.removeCategories("F");
+        System.out.println(driver2.toString());
+        driver2.removeAllCategories();
         System.out.println(driver2.toString());
 
 

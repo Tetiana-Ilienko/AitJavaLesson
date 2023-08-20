@@ -51,17 +51,24 @@ public class BusDriver {
                 categories.length + 1);
         temp[temp.length - 1] = categori;
         categories = temp;
+//        categories = Arrays.copyOf(categories, categories.length + 1); // Option2
+//        categories[categories.length - 1] = categori;
+    }
 
+    private int isIndex(String category) {
+        if (category == null) return -1;
+        for (int i = 0; i < categories.length; i++) { //перебираем массив
+            if (category.equals(categories[i])) {
+                return i; //
+            }
+        }
+        return -1;
     }
 
 
     public void removeCategories(String category) {
-        int index = 0;            // сщдаем переренную, куда запишем искомый индекс
-        for (int i = 0; i < categories.length; i++) { //перебираем массив
-            if (category ==categories[i]) {
-                index = i; // присваеваем индексу номер ячейки, которую нужно удалить
-            }
-        }
+        int index = isIndex(category);
+        if (index != -1) {
             String[] temp = new String[categories.length - 1]; // создаем новый массив на 1 короче
             for (int i = 0, j = 0; i < categories.length; i++) {// перебираем массив
 //                если не равно искомому индексу - переписываем значение, или пропускаем
@@ -72,7 +79,30 @@ public class BusDriver {
             }
             categories = temp;
         }
+    }
 
+    /*
+        Альтернатива:
+
+        public boolean removeCategories(String category){
+            int idx = isIndex(category);
+            if (idx == -1) return false; //  если строка не найдена ничего не делаем
+
+
+            String[] temp = new String[categories.length - 1];
+            for (int i = 0; i < temp.length; i++) {
+                if (i < idx) {
+                    temp[i] = categories[i];
+                } else {
+                    temp[i] = categories[i + 1];
+                }
+            }
+            categories = temp;
+            return true;
+        }*/
+    public void removeAllCategories() {
+        categories = new String[0];
+    }
 
 
     public String toString() {
