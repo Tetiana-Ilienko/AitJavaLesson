@@ -61,6 +61,9 @@ public char[] createsCharArray( String str)
         }
         return chars;
     }
+    /*
+    можно использовать метод toCharArray()
+     */
 
 // ++++++Task 03+++++++++++++++++++++++++++++++++++++++++++
    /*
@@ -72,33 +75,25 @@ public char[] createsCharArray( String str)
        2. перебираем символы.
        3. Записываем символ один раз в новую строку
      */
-    // TODO не корректно работает
-    public static StringBuilder removeDuplicateChars( String str){
-        StringBuilder result = new StringBuilder("");
-        for (int i = 0; i < str.length()-1; i++) {
-            if (str.charAt(i)!=str.charAt(i+1)){
-                result.append(str.charAt(i));
-            }
+
+    public static String removeDuplicateChars( String str){
+        String result = new String("");// Создается пустая строка result, которая будет
+        // содержать уникальные символы.
+        char[] chars = str.toCharArray();// Строка str преобразуется в массив символов chars. Это делается для того,
+        // чтобы мы могли проходить по каждому символу отдельно.
+        for (int i = 0; i < str.length(); i++) { //  Цикл начинается, и мы проходим по каждому символу
+                if(result.indexOf(chars[i]) == -1)//Это условие проверяет, есть ли символ chars[i] в строке result.
+                    // Метод indexOf возвращает индекс первого вхождения символа в строку. Если символ не найден,
+                    // то indexOf вернет -1.
+                {
+                    result += chars[i]; // abcd //Если символ chars[i] не найден в строке result,
+                    // то он добавляется к строке result.
+                }
         }
-        return result;
+        return result;//этот метод создает новую строку result, проходит по каждому символу в исходной строке str,
+        // и если символ еще не содержится в строке result, то он добавляется к ней. Таким образом,
+        // в итоге возвращается строка, содержащая только уникальные символы.
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*
     кoд Цезаря. Использовать маленькие буквы английского алфавита. Сдвиг на 5
@@ -106,16 +101,21 @@ public char[] createsCharArray( String str)
 
     public static String takeZesCode(String str, int move) {
         String coded = ""; //  задаем пустую строку для ответа
-        int lastCharValue = 'z'; // z= 122 ( шеснацатиричный код)
-        int alphabetLength = 'z' - 'a' + 1; // a=97
+        int lastCharValue = 'z'; // z= 122 ( шестнадцатеричный код)
+        int alphabetLength = 'z' - 'a' + 1; // a=97 вычисляем длинну алфавита
         for (char character : coded.toCharArray()) {
             int charNoRotation = character + move;
 
             int charValue = charNoRotation < lastCharValue ? charNoRotation : charNoRotation - alphabetLength;
+            // Если новое значение символа меньше значения 'z', то используется это значение.
+            // В противном случае, вычитаем длину алфавита для циклического сдвига.
             coded += (char) charValue;
+            // Преобразуем числовое значение символа обратно в символ и добавляем к строке coded.
 
         }
         return coded;
 
     }
+
 }
+
