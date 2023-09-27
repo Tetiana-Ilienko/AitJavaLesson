@@ -1,16 +1,19 @@
-package Lesson_24;
+package Animal;
 /*
 Полиморфизмом   называется возможность работать с несколькими типами так, как будто
 это один и тот же тип и в то же время поведение каждого типа будет уникальным в
 зависимости от его реализации.
  */
 
+import Animal.Animal;
+
 public class Main24 {
     public static void main(String[] args) {
 
 
-        Cat cat = new Cat(); // Восходящее преобразование. Происходит автоматически
-        Dog dog = new Dog();
+
+        Animal cat = new Cat(); // Восходящее преобразование. Происходит автоматически
+        Animal dog = new Dog();
         Hamster hamster = new Hamster();
 
         Animal[] animals = new Animal[3]; // так как классы являются наследниками

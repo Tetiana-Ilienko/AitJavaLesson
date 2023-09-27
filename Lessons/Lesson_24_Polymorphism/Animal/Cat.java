@@ -1,4 +1,4 @@
-package Lesson_24;
+package Animal;
 
 public class Cat extends Animal{ // назначаем класс наследником класса Animal
 
