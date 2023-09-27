@@ -9,7 +9,6 @@
       <sourceFolder url="file://$MODULE_DIR$/lesson_05/proba" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_06/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_06/code_praktik" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_03/lesson_03" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_04/lesson_04" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_07/lesson_07" isTestSource="false" />
@@ -24,6 +23,11 @@
       <sourceFolder url="file://$MODULE_DIR$/lesson_16/lesson_16" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_17/lesson_17" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_18/lesson_18" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWorks/HomeWork_05" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWorks/HomeWork_06" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWorks/HomeWork_07" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lessons/Lesson_05_boolean" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lessons/Lesson_06_if_else_switch_ternarny" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/lesson_03/lesson_03/Math" />
     </content>
     <orderEntry type="inheritedJdk" />
