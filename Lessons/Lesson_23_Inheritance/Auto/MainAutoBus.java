@@ -1,4 +1,4 @@
-package Lesson_23;
+package Auto;
 
 public class MainAutoBus {
     public static void main(String[] args) {

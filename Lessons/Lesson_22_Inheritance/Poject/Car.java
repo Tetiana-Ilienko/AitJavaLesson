@@ -1,4 +1,4 @@
-package Lesson_22;
+package Poject;
 // наследование
 //  наследующий клас имеет доступ ко всем полям родительского класса
 public class Car extends Vehicle{

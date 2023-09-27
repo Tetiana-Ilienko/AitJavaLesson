@@ -1,4 +1,4 @@
-package Lesson_23;
+package Auto;
 
 import java.util.Arrays;
 

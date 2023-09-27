@@ -1,4 +1,4 @@
-package Lesson_22;
+package Poject;
 
 public class Vehicle {
     private  String model;

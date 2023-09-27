@@ -1,4 +1,4 @@
-package Lesson_22;
+package Poject;
 
 public class MainVehicle {
     public static void main(String[] args) {
